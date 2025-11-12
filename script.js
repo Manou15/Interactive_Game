@@ -85,3 +85,12 @@ function update() {
     canJump = false;
   }
 }
+
+const start = document.getElementById("start");
+const container = document.getElementById("game-container");
+
+start.addEventListener("click", () => {
+  const canvas = document.querySelector("canvas");
+  canvas.style.display = "block";
+  container.style.display = "none";
+})

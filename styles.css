@@ -2,8 +2,44 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#game-container{
+  font-family: monospace;
+  background-image: url(../background.png);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 3rem;
+  margin-top: 10rem;
+}
+
+#start{
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: hsl(240, 42%, 46%);
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+#start:hover{
+    background-color: hsl(240, 42%, 36%);
+
+}
+
+canvas {
+  display: none;
+}
